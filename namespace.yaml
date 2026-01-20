@@ -1,0 +1,16 @@
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  name: karna # The internal name for the project/namespace
+  annotations:
+    openshift.io/display-name: "My Project Display Name" # For the Web Console
+    description: "This is a project for development" # Description for the console
+  labels:
+    app.kubernetes.io/part-of: my-team # Example label for organization
+spec:
+  # Optionally define initial members and roles here for automated setup
+  # members:
+  # - user: alice@example.com
+  #   role: admin
+  # - user: bob@example.com
+  #   role: editor
